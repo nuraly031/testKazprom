@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell',
+    'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
+  background-color: #112d49;
+}
+.App {
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.button {
+  margin-left: 20px;
+  height: 50px;
+  cursor: pointer;
+  background-color: beige;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 30px;
+}
+.button:hover {
+  background-color: rgb(240, 240, 155);
+}
+.modal {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+}
+.modal__content,
+.modal__buttons {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: white;
+}
+.modal.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+input {
+  width: 100%;
+  height: 30px;
+  font-size: 1.3rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+.modal__content__form {
+  display: flex;
+  flex-direction: row;
+}
+.modal__content__form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  height: 25px;
+  cursor: pointer;
+  background-color: beige;
+  font-size: 20px;
+  padding: 20px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.todoText {
+  width: 100%;
+  text-align: left;
+}
+.todo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  margin: 15px 0;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  border: 2px solid #555;
+  color: #112d49;
+  background-color: #fbfef9;
+  user-select: none;
+}
+.todo button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  height: 25px;
+  cursor: pointer;
+  background-color: beige;
+  font-size: 20px;
+  padding: 20px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.modal__buttons {
+  display: flex;
+  flex-direction: row;
+}
+.modal__buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  height: 25px;
+  cursor: pointer;
+  background-color: beige;
+  font-size: 20px;
+  padding: 20px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.textLine {
+  background-color: rgb(255, 252, 252);
+  cursor: pointer;
+}
+.textLine.active {
+  background-color: #cfe7ff;
+}
+.modal__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+  border: none;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgb(255, 252, 252);
+}
